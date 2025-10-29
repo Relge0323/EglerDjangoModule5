@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    BG1 NPCs
+{% endblock %}
+
+{% block content %}
+    <h1>Baldur's Gate NPC List</h1>
+
+<div class='char-list'>
+{% for char in character_list %}
+    <div class='char-card'>
+        <p>
+            <a href="{% url 'bg1:detail' char.pk %}">{{ char.char_name }}</a>
+        </p>
+    </div> 
+{% endfor %}
+</div>  
+{% endblock %}

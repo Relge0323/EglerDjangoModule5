@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    BG1 NPCs
+{% endblock %}
+
+{% block content %}
+<div class='char-card'>
+    <h1><strong>{{ char.char_name }}</strong></h1>
+
+    <p>Class - {{ char.char_class }}</p>
+    <p>Race - {{ char.char_race }}</p>
+    <p>Alignment - {{ char.char_align }}</p>
+    <br>
+    <p>Strength - {{ char.char_str }}</p>
+    <p>Dexterity - {{ char.char_dex }}</p>
+    <p>Constitution - {{ char.char_con }}</p>
+    <p>Intelligence - {{ char.char_int }}</p>
+    <p>Wisdom - {{ char.char_wis }}</p>
+    <p>Charisma - {{ char.char_cha }}</p>
+    <br>
+    <hr><br><br>
+    <p>Description - {{ char.char_desc }}</p>
+</div>
+{% endblock %}

@@ -1,0 +1,67 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+nav {
+    background-color: rgb(194, 104, 25);
+    font-size: 50px;
+    text-align: center;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.char-card {
+    background-color: rgb(30, 30, 138);
+    border: 2px solid darkgray;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.char-card h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.char-card p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.char-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.char-list .char-card {
+    font-size: 30px;
+    width: 200px;
+    padding: 15px;
+    background-color: #222;
+    border: 2px solid #555;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.char-card a {
+    text-decoration: none;
+}
